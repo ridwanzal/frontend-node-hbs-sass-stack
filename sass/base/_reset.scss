@@ -8,7 +8,7 @@ html {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1140px;
 }
 
 .pricing-header {
@@ -28,4 +28,29 @@ html {
 
 .box-shadow {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+.swiper {
+  width: auto;
+  position: relative;
+  position: initial !important;
+}
+
+.swiper-wrapper {
+  @include for-phone-only { 
+      position: relative !important;
+      overflow: scroll;
+  }
+  position: absolute !important;
+  overflow: auto;
+  max-height: 400px;
+}
+
+.swiper-pagination {
+  position:relative; 
+  top:300px;
+
+  @include for-phone-only {
+    top: 18px;
+  }
 }

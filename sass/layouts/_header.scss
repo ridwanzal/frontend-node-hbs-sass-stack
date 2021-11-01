@@ -2,8 +2,13 @@
     &__wrapper {
         .navmain {
             background-color : #fff !important;
-            padding-top: 25px;
-            padding-bottom : 25px;
+            padding-top: 24px;
+            padding-bottom : 24px;
+            
+            @include for-phone-only {
+               padding-top: 8px;
+               padding-bottom: 8px;
+            }
 
             &__brand {
                 margin-right: 50px;

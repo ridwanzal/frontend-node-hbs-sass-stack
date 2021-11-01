@@ -1,19 +1,14 @@
-/*base*/
+
+@import 'fonts/avenir';
 @import 'abstract/variables';
 @import 'abstract/functions';
 @import 'abstract/mixins';
-
 @import 'vendors/bootstrap.scss';
-
 @import 'base/reset';
 @import 'base/typography';
-
 @import 'components/button';
-
 @import 'layouts/header';
 @import 'layouts/navigation';
 @import 'layouts/sidebar';
 @import 'layouts/footer';
-
-
 @import 'pages/homepage';

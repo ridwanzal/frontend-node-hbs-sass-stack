@@ -19,6 +19,10 @@ var paths = {
         images : {
             src: "public/images/**/*.+(png|jpg|gif|ico|svg|webp)",
             dest: "dist/images"
+        },
+        fonts : {
+            src: "sass/fonts/**/*.+(woff|woff2)",
+            dest: "dist/css"
         }
     }
 };
@@ -48,12 +52,22 @@ function destImage(){
     );
 }
 
+function destFonts(){
+    return (
+        gulp
+            .src(paths.dest.fonts.src)
+            .pipe(gulp.dest(paths.dest.fonts.dest))
+    );
+}
+
 exports.style = style;
 exports.destImage = destImage;
+exports.destFonts = destFonts;
 
 function watch() {
     style();
     destImage();
+    destFonts();
     gulp.watch(paths.styles.src, style);
 }
 

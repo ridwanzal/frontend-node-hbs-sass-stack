@@ -1,7 +1,12 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Avenir Next';
+}
+
 .main {
     &__wrapper {
-        @include for-phone-only{
-            padding: 30px;
+        @include for-phone-only {
+            padding: 10px;
         }
     }
 }
@@ -11,21 +16,33 @@
     padding-bottom: 60px;
     background-color: transparent;
 
+    &--cta {
+        .button {
+            font-weight: 600;
+        }
+    }
+
+    @include for-phone-only {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     &__left {
-        &--headline { 
+        &--headline {
             h1 {
-                font-size : 53px;
-                font-weight : 700;
+                font-size: 53px;
+                font-weight: 600;
             }
         }
 
         &--text {
             margin-top: 40px;
             margin-bottom: 40px;
+
             p {
-                font-size : 18px;
+                font-size: 18px;
                 line-height: 35px;
-                color : $secondary-text-color;
+                color: $secondary-text-color;
             }
         }
 
@@ -33,23 +50,24 @@
 
     &__right {
         img {
-            max-width: 771px;
-            position: relative;
-            top: 45px;
-            left: -27px;
+            width: 100%;
 
-            @include for-phone-only{
-                width: 100%;
-                left: 0;
-                position:  inherit;
+            @include for-phone-only {
+                padding-top: 8px;
+                padding-bottom: 16px;
             }
         }
     }
 }
 
-.about {    
+.about {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @include for-phone-only {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
     .container {
         background: rgba(240, 99, 184, 0.15);
@@ -58,6 +76,10 @@
         padding-bottom: 62.5px;
         padding-left: 51px;
         padding-right: 51px;
+
+        @include for-phone-only {
+            border-radius: 24px;
+        }
     }
 
     &__img {
@@ -67,13 +89,276 @@
     &__content {
         h2 {
             font-size: 40px;
-            font-weight: bold;
+            font-weight: 600;
             padding-bottom: 28px;
+
+            @include for-phone-only {
+                font-size: 26px;
+                line-height: 45px;
+            }
         }
 
         p {
             line-height: 37px;
-            font-size : 18px;
+            font-size: 18px;
+
+            @include for-phone-only {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.features {
+    &__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__header {
+        text-align: center;
+
+        p {
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 15px;
+            line-height: 40px;
+
+            @include for-phone-only {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__item {
+        padding-bottom: 90px;
+
+        &--background {
+
+            img {
+                z-index: -1;
+                position: absolute;
+                width: auto;
+                padding-left: 92px;
+
+                @include for-phone-only {
+                    position: absolute;
+                    padding-left: 0;
+                    width: 320px;
+                    z-index: -1;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        &--left {
+            padding-top: 80px;
+
+            @include for-phone-only {
+                padding-top: 30px;
+            }
+
+            img {
+                width: 100%;
+
+                @include for-phone-only {
+                    width: auto;
+                }
+            }
+        }
+
+        &--right {
+            padding-top: 90px;
+
+            @include for-phone-only {
+                padding-top: 90px;
+            }
+
+            p {
+                max-width: 90%;
+                padding-top: 15px;
+                line-height: 30px;
+
+                @include for-phone-only {
+                    width: 100%;
+                }
+            }
+
+            &-cta {
+                display: flex;
+
+                i {
+                    height: 16px;
+                    padding-left: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+.slider {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include for-phone-only {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        background: #9C69E2;
+        border-radius: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+        height: 520px;
+
+        @include for-phone-only {
+            padding: 20px 20px;
+            height: 450px;
+            border-radius: 24px;
+        }
+    }
+
+    &__container {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px 20px;
+        border-radius: 25px;
+
+        @include for-desktop-up {
+            padding: 20px 20px;
+            border: 2px solid #9C69E2;
+            box-shadow: 1px 17px 0px 1px rgba(125, 66, 148, 0.54);
+            -webkit-box-shadow: 1px 17px 0px 1px rgba(125, 66, 148, 0.54);
+            -moz-box-shadow: 1px 17px 0px 1px rgba(125, 66, 148, 0.54);
+        }
+    }
+
+    &__webinfo {
+        color: $primary-color;
+    }
+
+    &__text {
+        color: #4B5D68;
+    }
+
+    h2 {
+        color: #ffffff;
+        margin-bottom: 50px;
+
+        @include for-phone-only {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.footers {
+    padding-top: 60px;
+
+    @include for-phone-only {
+        padding-top: 30px;
+    }
+
+    &__cta {
+        display: flex;
+        float: right;
+
+        button:first-child {
+            margin-right: 10px;
+        }
+
+        .button {
+            cursor: pointer;
+
+            @include for-phone-only {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    &__brand {
+        span {
+            padding-top: 2px;
+            padding-left: 16px;
+        }
+    }
+
+    &__address {
+        padding-top: 40px;
+    }
+
+    &__contact {
+        padding-top: 20px;
+    }
+
+    &__menu {
+        h6 {
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+
+            li {
+                line-height: 45px;
+            }
+        }
+
+        .socials {
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            a {
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+                cursor: pointer;
+
+                img {
+                    cursor: pointer;
+                    width: 45px;
+                    padding-right: 4px;
+                }
+            }
+
+        }
+    }
+}
+
+
+.footmark {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include for-phone-only {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &__left {
+        p {
+            font-size: 12px;
+        }
+    }
+
+    &__right {
+        float: right;
+        position: relative;
+        top: -8px;
+        cursor: pointer;
+
+        @include for-phone-only {
+            float: left;
+            margin-top: 16px;
         }
     }
 }

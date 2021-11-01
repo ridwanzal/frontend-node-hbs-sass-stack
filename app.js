@@ -20,7 +20,7 @@ var menuPaths =
 
 app.get('/', (req, res) => {
   res.render('index.hbs', {
-    pageTitle: 'NodeJS Sass & Handlebars boilerplate',
+    pageTitle: 'Datawarehouse',
     pathToRender : 'homepage',
     menu: menuPaths
   });
@@ -34,20 +34,5 @@ app.get('/about', (req, res) => {
   });
 });
 
-try { 
-  axios.get(src)
-  .then(res => res.data.posts.forEach(post => {
-    menuPaths.push({title: `${post.title}`, path: `/${post.path}`});
-    app.get(`/${post.path}`, (req, res) => {
-      res.render('post.hbs', {
-        pageTitle: post.title,
-        content: post.content,
-        menu: menuPaths
-      })
-    })
-  }));
-}catch(e){
-  console.log(e)
-}
 
 app.listen(port, () => {console.log(`App running on http://localhost:${port}`)});

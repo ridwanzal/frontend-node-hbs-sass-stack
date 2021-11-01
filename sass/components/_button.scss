@@ -1,6 +1,7 @@
 .button {
     
     &__primary {
+        cursor: pointer;
         background-color: $primary-color;
         padding : 12px 40px 12px 40px;
         border-radius: 50px;
@@ -10,6 +11,27 @@
 
         &:hover {
             background-color:$primary-hover-color;
+        }
+    }
+
+    &__default {
+        cursor: pointer;
+        background-color: #ffffff;
+        padding : 12px 40px 12px 40px;
+        border-radius: 50px;
+        border: 0px;
+        color: #212353;
+        font-weight: 700;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+
+        &:hover,
+        &:focus,
+        &:active{
+            background-color:#fff;
+        }
+
+        span {
+            margin-left: 5px;
         }
     }
 }
