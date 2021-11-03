@@ -3,10 +3,9 @@ const axios = require('axios');
 const express = require('express');
 const path = require("path");
 const hbs = require('hbs');
-const src = 'https://api.myjson.com/bins/1b1nn8';
 const app = express();
 const port = process.env.PORT || 3000;
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/public/')));
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.set('view engine', 'hbs');
