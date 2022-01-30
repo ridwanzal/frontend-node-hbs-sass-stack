@@ -1,4 +1,4 @@
-# **Frontend Slicing Datawarehouse Landing Page**
+# **Web Slicing with NodeJS, Handlebars, SCSS, and Gulp**
 
 ## Overview
 
