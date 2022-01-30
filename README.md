@@ -2,7 +2,7 @@
 
 ## Overview
 
-Hello, all these repositories are just one of many examples that you can use in the frontend stack, slicing with stacks like NodeJS, Gulp, SaSS, and Handlebars. Hopefully useful and can be used well. You can also develop more things from this repository. You can improve some or almost every point like customizing sass structure, updating task runner, customizing nodejs
+Hello, all these repositories are just one of many examples that you can use to build frontend stacks using NodeJS, Gulp, SaSS, and Handlebars.  You can improve some or almost every point like customizing sass structure, updating task runner, customizing nodejs
 
 ## Preview
 
