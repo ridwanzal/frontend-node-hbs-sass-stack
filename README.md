@@ -2,20 +2,24 @@
 
 ## Overview
 
-Hello, all these repositories are just one of many examples that you can use to build frontend stacks using NodeJS, Gulp, SaSS, and Handlebars.  You can improve some or almost every point like customizing sass structure, updating task runner, customizing nodejs
+Hello, This repo is simple boilerplate that you can used to build frontend stacks using NodeJS, Gulp, SaSS, and Handlebars.  You can improve some or almost every point like customizing sass structure, updating task runner, customizing nodejs
 
 ## Preview
+<a href="https://i.postimg.cc/pXy4NY3p/screencapture-127-0-0-1-8000-2021-11-05-09-50-27.png">Screenshots</a>
 
-<img src="https://i.postimg.cc/pXy4NY3p/screencapture-127-0-0-1-8000-2021-11-05-09-50-27.png">
+## Project Structure
+views -> place your page in here
+sass -> SaSS is structured in here
+public -> place external assets like image, javascript(build), css(build) in here
+dist -> distribution or build file
 
-## Prerequisites 
-
+## Technology Stack 
   - Node JS
   - Handlebars
   - Sass -> SCSS style
   - Gulp
 
-## Run project
+## Install & Run
 
 Install nodemon globally using the following command
 
