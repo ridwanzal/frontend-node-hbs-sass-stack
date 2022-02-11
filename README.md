@@ -8,9 +8,9 @@ Hello, This repo is simple boilerplate that you can used to build frontend stack
 <a href="https://i.postimg.cc/pXy4NY3p/screencapture-127-0-0-1-8000-2021-11-05-09-50-27.png">Screenshots</a>
 
 ## Project Structure
-views -> place your page in here
-sass -> SaSS is structured in here
-public -> place external assets like image, javascript(build), css(build) in here
+views -> place your page in here\
+sass -> SaSS is structured in here\
+public -> place external assets like image, javascript(build), css(build) in here\
 dist -> distribution or build file
 
 ## Technology Stack 
