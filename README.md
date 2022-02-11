@@ -1,4 +1,4 @@
-# **Web Slicing with NodeJS, Handlebars, SCSS, and Gulp**
+# **Simple frontend-boilerplate using nodejs, handlebars, scss and gulp**
 
 ## Overview
 
